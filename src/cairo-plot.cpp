@@ -45,7 +45,7 @@ int main(int argc, char** argv) {
 	   plot2.set_plot_origin(BOTTOM_LEFT);
 	   //plot2.set_default_vector(VECTOR_BOTTOM_LEFT);
 	   plot2.set_plot_title_position(POSITION_INNER);
-	   plot2.set_plot_title("Plot area, title inside,\ntop-origin, bottom left vector");
+	   plot2.set_plot_title("Plot area, title inside,\nbottom-left origin, top-right vector");
 
 	   for (double i = 0; i < 150; i++)
 	   {

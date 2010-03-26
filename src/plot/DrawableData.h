@@ -42,6 +42,7 @@ public:
 protected:
 	std::deque<T> m_data_set;
 	MarkerStyle m_marker_style;
+
 };
 
 template<typename T> inline int Gtk::Plot::DrawableData<T>::add_data_item(T item)
