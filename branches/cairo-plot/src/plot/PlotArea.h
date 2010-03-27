@@ -31,20 +31,58 @@ public:
 	Area();
 	virtual ~Area();
 
+	/// Gets the line collection storing the data to plot.
+	/**
+	* @return <tt>std::deque<Line2D*></tt> if the widget has data lines.
+	* @exception out_of_range if the index is not found or collection is empty.
+	*/
 	std::deque<Line2D*> get_lines();
-	void set_default_vector(DefaultVector vector);
+	/// Sets the default vector for the graph.
+	/**
+	* @param vector (VECTOR_TOP_RIGHT) : the vector direction to use as the default vector.
+	* @return void
+	*/
+	void set_default_vector(DefaultVector vector = VECTOR_TOP_RIGHT);
+	/// Sets the mininum size of the plot area, inclusive of margins, padding and so on
+	/**
+	* @param width : the mininum width of the area in pixels.
+	* @param height : the mininum height of the area in pixels.
+	* @return void
+	*/
 	void set_mininum_size(double width, double height);
+	/// Sets the mininum/maximum data values to plot.
+	/**
+	* @param xmin : the mininum x value to plot
+	* @param ymin : the mininum y value to plot
+	* @param xmax : the maximum x value to plot
+	* @param ymax : the maximum y value to plot
+	* @return void
+	*/
 	void set_mininum_range(double xmin, double ymin, double xmax, double ymax);
+	/// Sets the padding of the area.
+	/**
+	* @param x : padding to apply left and right of the plot
+	* @param y : padding to apply on top and bottom of the plot
+	* @return void
+	*/
 	void set_padding(double x, double y);
+	/// Sets the border of the plot itself (not of the area).
+	/*
+	* @param border : A <b>Gtk::Plot::Border</b> object to use as the border
+	* @return void
+	*/
 	void set_plot_border(Gtk::Plot::Border border);
 	void set_plot_origin(Origin origin);
 	void set_plot_title(Gtk::Label& title);
 	void set_plot_title(std::string title);
 	void set_plot_title_position(Gtk::Plot::LabelPosition pos);
+	/// Hides the data axes
 	void hide_axes();
+	/// Shows the data axes
 	void show_axes();
+
 protected:
-#ifdef GLIBMM_DEFAULT_SIGNAL_HANDLERS_ENABLED
+	//#ifdef GLIBMM_DEFAULT_SIGNAL_HANDLERS_ENABLED
 	//Overrides:
 	virtual void on_size_request(Gtk::Requisition* requisition);
 	virtual void on_size_allocate(Gtk::Allocation& allocation);
@@ -52,8 +90,13 @@ protected:
 	virtual void on_unmap();
 	virtual void on_realize();
 	virtual void on_unrealize();
+	/**
+	* This is where the drawing takes place. You'll likely not want to change this :)
+	* @param event : a pointer to the expose event of the widget.
+	* @return <tt>true</tt> if success.
+	*/
 	virtual bool on_expose_event(GdkEventExpose* event);
-#endif
+	//#endif
 	/* GLIBMM_DEFAULT_SIGNAL_HANDLERS_ENABLED */
 
 	Cairo::Matrix get_transform_matrix();

@@ -1,0 +1,124 @@
+\hypertarget{classGtk_1_1Plot_1_1Line2D}{
+\section{Gtk::Plot::Line2D Class Reference}
+\label{classGtk_1_1Plot_1_1Line2D}\index{Gtk::Plot::Line2D@{Gtk::Plot::Line2D}}
+}
+
+
+{\ttfamily \#include $<$Line2D.h$>$}Inheritance diagram for Gtk::Plot::Line2D::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3cm]{classGtk_1_1Plot_1_1Line2D}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classGtk_1_1Plot_1_1Line2D_a4f5fc46b03bac4dc0a87fe7dd4945cf1}{draw} (Cairo::RefPtr$<$ Cairo::Context $>$ cr)
+\begin{DoxyCompactList}\small\item\em Draw the data. \item\end{DoxyCompactList}\item 
+Gdk::Color $\ast$ \hyperlink{classGtk_1_1Plot_1_1Line2D_a29fb56ef0f66aa944d33f7327f5ab250}{get\_\-color} ()
+\item 
+std::valarray$<$ double $>$ $\ast$ \hyperlink{classGtk_1_1Plot_1_1Line2D_aca5b60a9b12895f64dba26d153c99785}{get\_\-dash} ()
+\item 
+double $\ast$ \hyperlink{classGtk_1_1Plot_1_1Line2D_a536017770621160e6e8c19c19b0485f2}{get\_\-width} ()
+\item 
+\hyperlink{classGtk_1_1Plot_1_1Line2D_af2f675904e4cdb37d958ad4d120798b4}{Line2D} ()
+\item 
+void \hyperlink{classGtk_1_1Plot_1_1Line2D_aeddda540e6d9c98d6495fdac8ceb7d3e}{set\_\-color} (Gdk::Color color)
+\item 
+void \hyperlink{classGtk_1_1Plot_1_1Line2D_ac569c4747dacde24d6d0e2fb4d9a2011}{set\_\-dash} (std::valarray$<$ double $>$ dash)
+\item 
+void \hyperlink{classGtk_1_1Plot_1_1Line2D_aa304dd085c71f0f85477f1680f0cafea}{set\_\-width} (double width)
+\item 
+virtual \hyperlink{classGtk_1_1Plot_1_1Line2D_abd9b0ace1e06932272a3dbd3f1009edf}{$\sim$Line2D} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Gdk::Color \hyperlink{classGtk_1_1Plot_1_1Line2D_ae322075b3cd8da490e47b3a0076d1b85}{m\_\-color}
+\item 
+std::valarray$<$ double $>$ \hyperlink{classGtk_1_1Plot_1_1Line2D_aa151e28045058d271b3f254cc078273e}{m\_\-dash}
+\item 
+double \hyperlink{classGtk_1_1Plot_1_1Line2D_a455d1610bfbfe269754464d2ba79cefb}{m\_\-width}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classGtk_1_1Plot_1_1Line2D_af2f675904e4cdb37d958ad4d120798b4}{
+\index{Gtk::Plot::Line2D@{Gtk::Plot::Line2D}!Line2D@{Line2D}}
+\index{Line2D@{Line2D}!Gtk::Plot::Line2D@{Gtk::Plot::Line2D}}
+\subsubsection[{Line2D}]{\setlength{\rightskip}{0pt plus 5cm}Gtk::Plot::Line2D::Line2D ()}}
+\label{classGtk_1_1Plot_1_1Line2D_af2f675904e4cdb37d958ad4d120798b4}
+\hypertarget{classGtk_1_1Plot_1_1Line2D_abd9b0ace1e06932272a3dbd3f1009edf}{
+\index{Gtk::Plot::Line2D@{Gtk::Plot::Line2D}!$\sim$Line2D@{$\sim$Line2D}}
+\index{$\sim$Line2D@{$\sim$Line2D}!Gtk::Plot::Line2D@{Gtk::Plot::Line2D}}
+\subsubsection[{$\sim$Line2D}]{\setlength{\rightskip}{0pt plus 5cm}Gtk::Plot::Line2D::$\sim$Line2D ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classGtk_1_1Plot_1_1Line2D_abd9b0ace1e06932272a3dbd3f1009edf}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classGtk_1_1Plot_1_1Line2D_a4f5fc46b03bac4dc0a87fe7dd4945cf1}{
+\index{Gtk::Plot::Line2D@{Gtk::Plot::Line2D}!draw@{draw}}
+\index{draw@{draw}!Gtk::Plot::Line2D@{Gtk::Plot::Line2D}}
+\subsubsection[{draw}]{\setlength{\rightskip}{0pt plus 5cm}void Gtk::Plot::Line2D::draw (Cairo::RefPtr$<$ Cairo::Context $>$ {\em cr})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classGtk_1_1Plot_1_1Line2D_a4f5fc46b03bac4dc0a87fe7dd4945cf1}
+
+
+Draw the data. Note that that the context object passed to this method should already be prepared (sized, etc) as this method should only handle its own layout. 
+\begin{DoxyParams}{Parameters}
+\item[{\em cr}]: the cairo context to draw with. \end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classGtk_1_1Plot_1_1DrawableData_a275c0162df2dfdd060e859b63077614c}{Gtk::Plot::DrawableData$<$ DataPoint2D $>$}.\hypertarget{classGtk_1_1Plot_1_1Line2D_a29fb56ef0f66aa944d33f7327f5ab250}{
+\index{Gtk::Plot::Line2D@{Gtk::Plot::Line2D}!get\_\-color@{get\_\-color}}
+\index{get\_\-color@{get\_\-color}!Gtk::Plot::Line2D@{Gtk::Plot::Line2D}}
+\subsubsection[{get\_\-color}]{\setlength{\rightskip}{0pt plus 5cm}Gdk::Color $\ast$ Gtk::Plot::Line2D::get\_\-color ()}}
+\label{classGtk_1_1Plot_1_1Line2D_a29fb56ef0f66aa944d33f7327f5ab250}
+\hypertarget{classGtk_1_1Plot_1_1Line2D_aca5b60a9b12895f64dba26d153c99785}{
+\index{Gtk::Plot::Line2D@{Gtk::Plot::Line2D}!get\_\-dash@{get\_\-dash}}
+\index{get\_\-dash@{get\_\-dash}!Gtk::Plot::Line2D@{Gtk::Plot::Line2D}}
+\subsubsection[{get\_\-dash}]{\setlength{\rightskip}{0pt plus 5cm}std::valarray$<$ double $>$ $\ast$ Gtk::Plot::Line2D::get\_\-dash ()}}
+\label{classGtk_1_1Plot_1_1Line2D_aca5b60a9b12895f64dba26d153c99785}
+\hypertarget{classGtk_1_1Plot_1_1Line2D_a536017770621160e6e8c19c19b0485f2}{
+\index{Gtk::Plot::Line2D@{Gtk::Plot::Line2D}!get\_\-width@{get\_\-width}}
+\index{get\_\-width@{get\_\-width}!Gtk::Plot::Line2D@{Gtk::Plot::Line2D}}
+\subsubsection[{get\_\-width}]{\setlength{\rightskip}{0pt plus 5cm}double $\ast$ Gtk::Plot::Line2D::get\_\-width ()}}
+\label{classGtk_1_1Plot_1_1Line2D_a536017770621160e6e8c19c19b0485f2}
+\hypertarget{classGtk_1_1Plot_1_1Line2D_aeddda540e6d9c98d6495fdac8ceb7d3e}{
+\index{Gtk::Plot::Line2D@{Gtk::Plot::Line2D}!set\_\-color@{set\_\-color}}
+\index{set\_\-color@{set\_\-color}!Gtk::Plot::Line2D@{Gtk::Plot::Line2D}}
+\subsubsection[{set\_\-color}]{\setlength{\rightskip}{0pt plus 5cm}void Gtk::Plot::Line2D::set\_\-color (Gdk::Color {\em color})}}
+\label{classGtk_1_1Plot_1_1Line2D_aeddda540e6d9c98d6495fdac8ceb7d3e}
+\hypertarget{classGtk_1_1Plot_1_1Line2D_ac569c4747dacde24d6d0e2fb4d9a2011}{
+\index{Gtk::Plot::Line2D@{Gtk::Plot::Line2D}!set\_\-dash@{set\_\-dash}}
+\index{set\_\-dash@{set\_\-dash}!Gtk::Plot::Line2D@{Gtk::Plot::Line2D}}
+\subsubsection[{set\_\-dash}]{\setlength{\rightskip}{0pt plus 5cm}void Gtk::Plot::Line2D::set\_\-dash (std::valarray$<$ double $>$ {\em dash})}}
+\label{classGtk_1_1Plot_1_1Line2D_ac569c4747dacde24d6d0e2fb4d9a2011}
+\hypertarget{classGtk_1_1Plot_1_1Line2D_aa304dd085c71f0f85477f1680f0cafea}{
+\index{Gtk::Plot::Line2D@{Gtk::Plot::Line2D}!set\_\-width@{set\_\-width}}
+\index{set\_\-width@{set\_\-width}!Gtk::Plot::Line2D@{Gtk::Plot::Line2D}}
+\subsubsection[{set\_\-width}]{\setlength{\rightskip}{0pt plus 5cm}void Gtk::Plot::Line2D::set\_\-width (double {\em width})}}
+\label{classGtk_1_1Plot_1_1Line2D_aa304dd085c71f0f85477f1680f0cafea}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classGtk_1_1Plot_1_1Line2D_ae322075b3cd8da490e47b3a0076d1b85}{
+\index{Gtk::Plot::Line2D@{Gtk::Plot::Line2D}!m\_\-color@{m\_\-color}}
+\index{m\_\-color@{m\_\-color}!Gtk::Plot::Line2D@{Gtk::Plot::Line2D}}
+\subsubsection[{m\_\-color}]{\setlength{\rightskip}{0pt plus 5cm}Gdk::Color {\bf Gtk::Plot::Line2D::m\_\-color}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classGtk_1_1Plot_1_1Line2D_ae322075b3cd8da490e47b3a0076d1b85}
+\hypertarget{classGtk_1_1Plot_1_1Line2D_aa151e28045058d271b3f254cc078273e}{
+\index{Gtk::Plot::Line2D@{Gtk::Plot::Line2D}!m\_\-dash@{m\_\-dash}}
+\index{m\_\-dash@{m\_\-dash}!Gtk::Plot::Line2D@{Gtk::Plot::Line2D}}
+\subsubsection[{m\_\-dash}]{\setlength{\rightskip}{0pt plus 5cm}std::valarray$<$double$>$ {\bf Gtk::Plot::Line2D::m\_\-dash}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classGtk_1_1Plot_1_1Line2D_aa151e28045058d271b3f254cc078273e}
+\hypertarget{classGtk_1_1Plot_1_1Line2D_a455d1610bfbfe269754464d2ba79cefb}{
+\index{Gtk::Plot::Line2D@{Gtk::Plot::Line2D}!m\_\-width@{m\_\-width}}
+\index{m\_\-width@{m\_\-width}!Gtk::Plot::Line2D@{Gtk::Plot::Line2D}}
+\subsubsection[{m\_\-width}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf Gtk::Plot::Line2D::m\_\-width}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classGtk_1_1Plot_1_1Line2D_a455d1610bfbfe269754464d2ba79cefb}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Line2D_8h}{Line2D.h}\item 
+\hyperlink{Line2D_8cpp}{Line2D.cpp}\end{DoxyCompactItemize}

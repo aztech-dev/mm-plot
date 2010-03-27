@@ -147,6 +147,7 @@ bool Area::on_expose_event(GdkEventExpose *event)
 		int t_height, t_width;
 
 		m_title->set_alignment(ALIGN_CENTER, ALIGN_CENTER);
+		m_title->set_justify(Gtk::JUSTIFY_CENTER);
 		Glib::RefPtr<Pango::Layout> pangoLayout = m_title->get_layout();
 		pangoLayout->get_pixel_size(t_width, t_height);
 
@@ -225,25 +226,20 @@ bool Area::on_expose_event(GdkEventExpose *event)
 			cr->restore();
 		}
 
-		/* delete when origin/vector direction implemented */
-			// draw equivalent of vector(+1,+1) to check origin and direction
-			cr->set_source_rgb(0,0,0);
-			cr->set_line_width(2);
-			std::deque<Line2D*>::iterator it;
-			for (it = m_lines.begin(); it != m_lines.end(); ++it)
-			{
-				Line2D* p = (Line2D*) *it;
-				p->draw(cr);
-			}
-			cr->stroke();
-		// end delete */
+		// draw equivalent of vector(+1,+1) to check origin and direction
+		std::deque<Line2D*>::iterator it;
+		for (it = m_lines.begin(); it != m_lines.end(); ++it)
+		{
+			Line2D* p = (Line2D*) *it;
+			p->draw(cr);
+		}
 
 		cr->restore();
 
 		// draw plot title
 		Gdk::Cairo::set_source_color(cr, Gdk::Color("black"));
 		m_title->set_alignment(0.5, 0);
-		cr->move_to(0.5*width-0.5*t_width,m_padding_y);
+		cr->move_to(.5*width-0.5*t_width,m_padding_y);
 		pangoLayout->update_from_cairo_context(cr);
 		pangoLayout->add_to_cairo_context(cr);
 		cr->fill();
@@ -252,7 +248,7 @@ bool Area::on_expose_event(GdkEventExpose *event)
 
 		/*
 		context->save();
-		context->set_line_width(border_width);
+		context->set_width(border_width);
 		context->set_source_rgb(border_color.get_red(), border_color.get_green(),
 				border_color.get_blue());
 
@@ -303,7 +299,7 @@ bool Area::on_expose_event(GdkEventExpose *event)
 		context->transform(m);
 
 		// Clip the region to prevent drawing outside of area
-		context->set_line_width(1.0);
+		context->set_width(1.0);
 		context->set_source_rgb(1,0,0);
 		context->rectangle(0, 0, (size.width-border_width)*9/10, (size.height-border_width)*9/10);
 		context->stroke();
