@@ -1,0 +1,334 @@
+\hypertarget{classGtk_1_1Plot_1_1Area}{
+\section{Gtk::Plot::Area Class Reference}
+\label{classGtk_1_1Plot_1_1Area}\index{Gtk::Plot::Area@{Gtk::Plot::Area}}
+}
+
+
+{\ttfamily \#include $<$PlotArea.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classGtk_1_1Plot_1_1Area_a0620d8e15c28422e302152fe086436ad}{Area} ()
+\item 
+std::deque$<$ \hyperlink{classGtk_1_1Plot_1_1Line2D}{Line2D} $\ast$ $>$ \hyperlink{classGtk_1_1Plot_1_1Area_a3d63a496f6d7d604aeae17e7f85beda9}{get\_\-lines} ()
+\begin{DoxyCompactList}\small\item\em Gets the line collection storing the data to plot. \item\end{DoxyCompactList}\item 
+void \hyperlink{classGtk_1_1Plot_1_1Area_a20070fe099e163edfb8fb6c07526f4c3}{hide\_\-axes} ()
+\begin{DoxyCompactList}\small\item\em Hides the data axes. \item\end{DoxyCompactList}\item 
+void \hyperlink{classGtk_1_1Plot_1_1Area_a98008d5f8c7cdf2eeaa96f13b2ae55ce}{set\_\-default\_\-vector} (\hyperlink{namespaceGtk_1_1Plot_aa7cadb8fb1ada346afe4e3acce74600d}{DefaultVector} vector=VECTOR\_\-TOP\_\-RIGHT)
+\begin{DoxyCompactList}\small\item\em Sets the default vector for the graph. \item\end{DoxyCompactList}\item 
+void \hyperlink{classGtk_1_1Plot_1_1Area_aba18121a1816de00d3ab66c7c380e116}{set\_\-mininum\_\-range} (double xmin, double ymin, double xmax, double ymax)
+\begin{DoxyCompactList}\small\item\em Sets the mininum/maximum data values to plot. \item\end{DoxyCompactList}\item 
+void \hyperlink{classGtk_1_1Plot_1_1Area_ad02555415cfec562f6333a54e491806f}{set\_\-mininum\_\-size} (double width, double height)
+\begin{DoxyCompactList}\small\item\em Sets the mininum size of the plot area, inclusive of margins, padding and so on. \item\end{DoxyCompactList}\item 
+void \hyperlink{classGtk_1_1Plot_1_1Area_a44b182e39eab6618344524c0ddc5362c}{set\_\-padding} (double x, double y)
+\begin{DoxyCompactList}\small\item\em Sets the padding of the area. \item\end{DoxyCompactList}\item 
+void \hyperlink{classGtk_1_1Plot_1_1Area_a1eac5a10b44cc7cff1c7c238659d6fef}{set\_\-plot\_\-border} (\hyperlink{structGtk_1_1Plot_1_1Border}{Gtk::Plot::Border} border)
+\begin{DoxyCompactList}\small\item\em Sets the border of the plot itself (not of the area). \item\end{DoxyCompactList}\item 
+void \hyperlink{classGtk_1_1Plot_1_1Area_a2f056d2340f08b59ba04c4c890d98f0b}{set\_\-plot\_\-origin} (\hyperlink{namespaceGtk_1_1Plot_a0ce4e6f495df606dd5b947ea1512490f}{Origin} origin)
+\item 
+void \hyperlink{classGtk_1_1Plot_1_1Area_aada203f9074e4b7e98631eff6d9a711e}{set\_\-plot\_\-title} (std::string title)
+\item 
+void \hyperlink{classGtk_1_1Plot_1_1Area_ab6fa6f90087da8c0cf42565c4ad55e10}{set\_\-plot\_\-title} (Gtk::Label \&title)
+\item 
+void \hyperlink{classGtk_1_1Plot_1_1Area_a59e21443681606bfefc610ef7913e717}{set\_\-plot\_\-title\_\-position} (\hyperlink{namespaceGtk_1_1Plot_a125746674247df0f29cb6d6aa8089cb6}{Gtk::Plot::LabelPosition} pos)
+\item 
+void \hyperlink{classGtk_1_1Plot_1_1Area_aba6e491e72d135eb80e8fa29cdc06165}{show\_\-axes} ()
+\begin{DoxyCompactList}\small\item\em Shows the data axes. \item\end{DoxyCompactList}\item 
+virtual \hyperlink{classGtk_1_1Plot_1_1Area_a474a966b91e311f5591718135a850b48}{$\sim$Area} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Cairo::Matrix \hyperlink{classGtk_1_1Plot_1_1Area_ae10eac569e8477756e0bdafdecdc4666}{get\_\-transform\_\-matrix} ()
+\item 
+virtual bool \hyperlink{classGtk_1_1Plot_1_1Area_a5595741f965885c6c621ac2129d9ae34}{on\_\-expose\_\-event} (GdkEventExpose $\ast$event)
+\item 
+virtual void \hyperlink{classGtk_1_1Plot_1_1Area_aac03d26cdb161ccc33f34ef3dbcf428a}{on\_\-map} ()
+\item 
+virtual void \hyperlink{classGtk_1_1Plot_1_1Area_acbcedd50e5503b656e14307c01569500}{on\_\-realize} ()
+\item 
+virtual void \hyperlink{classGtk_1_1Plot_1_1Area_a29ff37fa1a94277109a514bcbf90ac16}{on\_\-size\_\-allocate} (Gtk::Allocation \&allocation)
+\item 
+virtual void \hyperlink{classGtk_1_1Plot_1_1Area_a839dd99ca3281e3f6b7c669af54d1393}{on\_\-size\_\-request} (Gtk::Requisition $\ast$requisition)
+\item 
+virtual void \hyperlink{classGtk_1_1Plot_1_1Area_a67389087dd5c6467a3ae9241521f80bf}{on\_\-unmap} ()
+\item 
+virtual void \hyperlink{classGtk_1_1Plot_1_1Area_a301b7923090d5b717d3112fc339dce01}{on\_\-unrealize} ()
+\item 
+void \hyperlink{classGtk_1_1Plot_1_1Area_a2be35b990f15d351739af58119d5e7a9}{translate\_\-context} (Cairo::Context $\ast$context)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structGtk_1_1Plot_1_1Border}{Line} \hyperlink{classGtk_1_1Plot_1_1Area_a46e921e38d4f06b75fa733ead0e3e153}{m\_\-axes\_\-style}
+\item 
+\hyperlink{structGtk_1_1Plot_1_1Border}{Border} \hyperlink{classGtk_1_1Plot_1_1Area_a64ed564fa355d20fa2e85c39bf681505}{m\_\-border}
+\item 
+\hyperlink{namespaceGtk_1_1Plot_aa7cadb8fb1ada346afe4e3acce74600d}{DefaultVector} \hyperlink{classGtk_1_1Plot_1_1Area_acca72f1dfcaf243905f2f2a72383a0a6}{m\_\-def\_\-vector}
+\item 
+\hyperlink{namespaceGtk_1_1Plot_a125746674247df0f29cb6d6aa8089cb6}{LabelPosition} \hyperlink{classGtk_1_1Plot_1_1Area_a1f3ef841a840e36e86451344a6b2ab12}{m\_\-label\_\-position}
+\item 
+std::deque$<$ \hyperlink{classGtk_1_1Plot_1_1Line2D}{Line2D} $\ast$ $>$ \hyperlink{classGtk_1_1Plot_1_1Area_aec9a3973b17514a371d75780dd525499}{m\_\-lines}
+\item 
+Gtk::Allocation \hyperlink{classGtk_1_1Plot_1_1Area_ae7f8e7f943559993a00a50f612158d8a}{m\_\-min\_\-size}
+\item 
+\hyperlink{namespaceGtk_1_1Plot_a0ce4e6f495df606dd5b947ea1512490f}{Origin} \hyperlink{classGtk_1_1Plot_1_1Area_acd35e208c895c011d2cd8803bab9fb05}{m\_\-origin}
+\item 
+int \hyperlink{classGtk_1_1Plot_1_1Area_a2f9c13393566c0dafb7ef3f95241fa87}{m\_\-padding\_\-x}
+\item 
+int \hyperlink{classGtk_1_1Plot_1_1Area_a54d14872d49c140d832b0fb75ad8f55d}{m\_\-padding\_\-y}
+\item 
+Gdk::Rectangle \hyperlink{classGtk_1_1Plot_1_1Area_aed0c26f548c6de73e8d91a1b359ac30d}{m\_\-range\_\-rect}
+\item 
+Glib::RefPtr$<$ Gdk::Window $>$ \hyperlink{classGtk_1_1Plot_1_1Area_ad3f7f9608995f133a30760540a0ed745}{m\_\-refGdkWindow}
+\item 
+bool \hyperlink{classGtk_1_1Plot_1_1Area_ae7bc177b3fd37a14aed42cbbc8051386}{m\_\-show\_\-axes}
+\item 
+Gtk::Label $\ast$ \hyperlink{classGtk_1_1Plot_1_1Area_ab3723bf8b688502a83052ae90f4d931a}{m\_\-title}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classGtk_1_1Plot_1_1Area_a0620d8e15c28422e302152fe086436ad}{
+\index{Gtk::Plot::Area@{Gtk::Plot::Area}!Area@{Area}}
+\index{Area@{Area}!Gtk::Plot::Area@{Gtk::Plot::Area}}
+\subsubsection[{Area}]{\setlength{\rightskip}{0pt plus 5cm}Gtk::Plot::Area::Area ()}}
+\label{classGtk_1_1Plot_1_1Area_a0620d8e15c28422e302152fe086436ad}
+\hypertarget{classGtk_1_1Plot_1_1Area_a474a966b91e311f5591718135a850b48}{
+\index{Gtk::Plot::Area@{Gtk::Plot::Area}!$\sim$Area@{$\sim$Area}}
+\index{$\sim$Area@{$\sim$Area}!Gtk::Plot::Area@{Gtk::Plot::Area}}
+\subsubsection[{$\sim$Area}]{\setlength{\rightskip}{0pt plus 5cm}Gtk::Plot::Area::$\sim$Area ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classGtk_1_1Plot_1_1Area_a474a966b91e311f5591718135a850b48}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classGtk_1_1Plot_1_1Area_a3d63a496f6d7d604aeae17e7f85beda9}{
+\index{Gtk::Plot::Area@{Gtk::Plot::Area}!get\_\-lines@{get\_\-lines}}
+\index{get\_\-lines@{get\_\-lines}!Gtk::Plot::Area@{Gtk::Plot::Area}}
+\subsubsection[{get\_\-lines}]{\setlength{\rightskip}{0pt plus 5cm}std::deque$<$ {\bf Line2D} $\ast$ $>$ Gtk::Plot::Area::get\_\-lines ()}}
+\label{classGtk_1_1Plot_1_1Area_a3d63a496f6d7d604aeae17e7f85beda9}
+
+
+Gets the line collection storing the data to plot. \begin{DoxyReturn}{Returns}
+{\ttfamily std::deque$<$Line2D$\ast$$>$} if the widget has data lines. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em out\_\-of\_\-range}]if the index is not found or collection is empty. \end{DoxyExceptions}
+\hypertarget{classGtk_1_1Plot_1_1Area_ae10eac569e8477756e0bdafdecdc4666}{
+\index{Gtk::Plot::Area@{Gtk::Plot::Area}!get\_\-transform\_\-matrix@{get\_\-transform\_\-matrix}}
+\index{get\_\-transform\_\-matrix@{get\_\-transform\_\-matrix}!Gtk::Plot::Area@{Gtk::Plot::Area}}
+\subsubsection[{get\_\-transform\_\-matrix}]{\setlength{\rightskip}{0pt plus 5cm}Cairo::Matrix Gtk::Plot::Area::get\_\-transform\_\-matrix ()\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classGtk_1_1Plot_1_1Area_ae10eac569e8477756e0bdafdecdc4666}
+\hypertarget{classGtk_1_1Plot_1_1Area_a20070fe099e163edfb8fb6c07526f4c3}{
+\index{Gtk::Plot::Area@{Gtk::Plot::Area}!hide\_\-axes@{hide\_\-axes}}
+\index{hide\_\-axes@{hide\_\-axes}!Gtk::Plot::Area@{Gtk::Plot::Area}}
+\subsubsection[{hide\_\-axes}]{\setlength{\rightskip}{0pt plus 5cm}void Gtk::Plot::Area::hide\_\-axes ()}}
+\label{classGtk_1_1Plot_1_1Area_a20070fe099e163edfb8fb6c07526f4c3}
+
+
+Hides the data axes. \hypertarget{classGtk_1_1Plot_1_1Area_a5595741f965885c6c621ac2129d9ae34}{
+\index{Gtk::Plot::Area@{Gtk::Plot::Area}!on\_\-expose\_\-event@{on\_\-expose\_\-event}}
+\index{on\_\-expose\_\-event@{on\_\-expose\_\-event}!Gtk::Plot::Area@{Gtk::Plot::Area}}
+\subsubsection[{on\_\-expose\_\-event}]{\setlength{\rightskip}{0pt plus 5cm}bool Gtk::Plot::Area::on\_\-expose\_\-event (GdkEventExpose $\ast$ {\em event})\hspace{0.3cm}{\ttfamily  \mbox{[}protected, virtual\mbox{]}}}}
+\label{classGtk_1_1Plot_1_1Area_a5595741f965885c6c621ac2129d9ae34}
+This is where the drawing takes place. You'll likely not want to change this :) 
+\begin{DoxyParams}{Parameters}
+\item[{\em event}]: a pointer to the expose event of the widget. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if success. 
+\end{DoxyReturn}
+\hypertarget{classGtk_1_1Plot_1_1Area_aac03d26cdb161ccc33f34ef3dbcf428a}{
+\index{Gtk::Plot::Area@{Gtk::Plot::Area}!on\_\-map@{on\_\-map}}
+\index{on\_\-map@{on\_\-map}!Gtk::Plot::Area@{Gtk::Plot::Area}}
+\subsubsection[{on\_\-map}]{\setlength{\rightskip}{0pt plus 5cm}void Gtk::Plot::Area::on\_\-map ()\hspace{0.3cm}{\ttfamily  \mbox{[}protected, virtual\mbox{]}}}}
+\label{classGtk_1_1Plot_1_1Area_aac03d26cdb161ccc33f34ef3dbcf428a}
+\hypertarget{classGtk_1_1Plot_1_1Area_acbcedd50e5503b656e14307c01569500}{
+\index{Gtk::Plot::Area@{Gtk::Plot::Area}!on\_\-realize@{on\_\-realize}}
+\index{on\_\-realize@{on\_\-realize}!Gtk::Plot::Area@{Gtk::Plot::Area}}
+\subsubsection[{on\_\-realize}]{\setlength{\rightskip}{0pt plus 5cm}void Gtk::Plot::Area::on\_\-realize ()\hspace{0.3cm}{\ttfamily  \mbox{[}protected, virtual\mbox{]}}}}
+\label{classGtk_1_1Plot_1_1Area_acbcedd50e5503b656e14307c01569500}
+\hypertarget{classGtk_1_1Plot_1_1Area_a29ff37fa1a94277109a514bcbf90ac16}{
+\index{Gtk::Plot::Area@{Gtk::Plot::Area}!on\_\-size\_\-allocate@{on\_\-size\_\-allocate}}
+\index{on\_\-size\_\-allocate@{on\_\-size\_\-allocate}!Gtk::Plot::Area@{Gtk::Plot::Area}}
+\subsubsection[{on\_\-size\_\-allocate}]{\setlength{\rightskip}{0pt plus 5cm}void Gtk::Plot::Area::on\_\-size\_\-allocate (Gtk::Allocation \& {\em allocation})\hspace{0.3cm}{\ttfamily  \mbox{[}protected, virtual\mbox{]}}}}
+\label{classGtk_1_1Plot_1_1Area_a29ff37fa1a94277109a514bcbf90ac16}
+\hypertarget{classGtk_1_1Plot_1_1Area_a839dd99ca3281e3f6b7c669af54d1393}{
+\index{Gtk::Plot::Area@{Gtk::Plot::Area}!on\_\-size\_\-request@{on\_\-size\_\-request}}
+\index{on\_\-size\_\-request@{on\_\-size\_\-request}!Gtk::Plot::Area@{Gtk::Plot::Area}}
+\subsubsection[{on\_\-size\_\-request}]{\setlength{\rightskip}{0pt plus 5cm}void Gtk::Plot::Area::on\_\-size\_\-request (Gtk::Requisition $\ast$ {\em requisition})\hspace{0.3cm}{\ttfamily  \mbox{[}protected, virtual\mbox{]}}}}
+\label{classGtk_1_1Plot_1_1Area_a839dd99ca3281e3f6b7c669af54d1393}
+\hypertarget{classGtk_1_1Plot_1_1Area_a67389087dd5c6467a3ae9241521f80bf}{
+\index{Gtk::Plot::Area@{Gtk::Plot::Area}!on\_\-unmap@{on\_\-unmap}}
+\index{on\_\-unmap@{on\_\-unmap}!Gtk::Plot::Area@{Gtk::Plot::Area}}
+\subsubsection[{on\_\-unmap}]{\setlength{\rightskip}{0pt plus 5cm}void Gtk::Plot::Area::on\_\-unmap ()\hspace{0.3cm}{\ttfamily  \mbox{[}protected, virtual\mbox{]}}}}
+\label{classGtk_1_1Plot_1_1Area_a67389087dd5c6467a3ae9241521f80bf}
+\hypertarget{classGtk_1_1Plot_1_1Area_a301b7923090d5b717d3112fc339dce01}{
+\index{Gtk::Plot::Area@{Gtk::Plot::Area}!on\_\-unrealize@{on\_\-unrealize}}
+\index{on\_\-unrealize@{on\_\-unrealize}!Gtk::Plot::Area@{Gtk::Plot::Area}}
+\subsubsection[{on\_\-unrealize}]{\setlength{\rightskip}{0pt plus 5cm}void Gtk::Plot::Area::on\_\-unrealize ()\hspace{0.3cm}{\ttfamily  \mbox{[}protected, virtual\mbox{]}}}}
+\label{classGtk_1_1Plot_1_1Area_a301b7923090d5b717d3112fc339dce01}
+\hypertarget{classGtk_1_1Plot_1_1Area_a98008d5f8c7cdf2eeaa96f13b2ae55ce}{
+\index{Gtk::Plot::Area@{Gtk::Plot::Area}!set\_\-default\_\-vector@{set\_\-default\_\-vector}}
+\index{set\_\-default\_\-vector@{set\_\-default\_\-vector}!Gtk::Plot::Area@{Gtk::Plot::Area}}
+\subsubsection[{set\_\-default\_\-vector}]{\setlength{\rightskip}{0pt plus 5cm}void Gtk::Plot::Area::set\_\-default\_\-vector ({\bf DefaultVector} {\em vector} = {\ttfamily VECTOR\_\-TOP\_\-RIGHT})}}
+\label{classGtk_1_1Plot_1_1Area_a98008d5f8c7cdf2eeaa96f13b2ae55ce}
+
+
+Sets the default vector for the graph. 
+\begin{DoxyParams}{Parameters}
+\item[{\em vector}](VECTOR\_\-TOP\_\-RIGHT) : the vector direction to use as the default vector. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{classGtk_1_1Plot_1_1Area_aba18121a1816de00d3ab66c7c380e116}{
+\index{Gtk::Plot::Area@{Gtk::Plot::Area}!set\_\-mininum\_\-range@{set\_\-mininum\_\-range}}
+\index{set\_\-mininum\_\-range@{set\_\-mininum\_\-range}!Gtk::Plot::Area@{Gtk::Plot::Area}}
+\subsubsection[{set\_\-mininum\_\-range}]{\setlength{\rightskip}{0pt plus 5cm}void Gtk::Plot::Area::set\_\-mininum\_\-range (double {\em xmin}, \/  double {\em ymin}, \/  double {\em xmax}, \/  double {\em ymax})}}
+\label{classGtk_1_1Plot_1_1Area_aba18121a1816de00d3ab66c7c380e116}
+
+
+Sets the mininum/maximum data values to plot. 
+\begin{DoxyParams}{Parameters}
+\item[{\em xmin}]: the mininum x value to plot \item[{\em ymin}]: the mininum y value to plot \item[{\em xmax}]: the maximum x value to plot \item[{\em ymax}]: the maximum y value to plot \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{classGtk_1_1Plot_1_1Area_ad02555415cfec562f6333a54e491806f}{
+\index{Gtk::Plot::Area@{Gtk::Plot::Area}!set\_\-mininum\_\-size@{set\_\-mininum\_\-size}}
+\index{set\_\-mininum\_\-size@{set\_\-mininum\_\-size}!Gtk::Plot::Area@{Gtk::Plot::Area}}
+\subsubsection[{set\_\-mininum\_\-size}]{\setlength{\rightskip}{0pt plus 5cm}void Gtk::Plot::Area::set\_\-mininum\_\-size (double {\em width}, \/  double {\em height})}}
+\label{classGtk_1_1Plot_1_1Area_ad02555415cfec562f6333a54e491806f}
+
+
+Sets the mininum size of the plot area, inclusive of margins, padding and so on. 
+\begin{DoxyParams}{Parameters}
+\item[{\em width}]: the mininum width of the area in pixels. \item[{\em height}]: the mininum height of the area in pixels. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{classGtk_1_1Plot_1_1Area_a44b182e39eab6618344524c0ddc5362c}{
+\index{Gtk::Plot::Area@{Gtk::Plot::Area}!set\_\-padding@{set\_\-padding}}
+\index{set\_\-padding@{set\_\-padding}!Gtk::Plot::Area@{Gtk::Plot::Area}}
+\subsubsection[{set\_\-padding}]{\setlength{\rightskip}{0pt plus 5cm}void Gtk::Plot::Area::set\_\-padding (double {\em x}, \/  double {\em y})}}
+\label{classGtk_1_1Plot_1_1Area_a44b182e39eab6618344524c0ddc5362c}
+
+
+Sets the padding of the area. 
+\begin{DoxyParams}{Parameters}
+\item[{\em x}]: padding to apply left and right of the plot \item[{\em y}]: padding to apply on top and bottom of the plot \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{classGtk_1_1Plot_1_1Area_a1eac5a10b44cc7cff1c7c238659d6fef}{
+\index{Gtk::Plot::Area@{Gtk::Plot::Area}!set\_\-plot\_\-border@{set\_\-plot\_\-border}}
+\index{set\_\-plot\_\-border@{set\_\-plot\_\-border}!Gtk::Plot::Area@{Gtk::Plot::Area}}
+\subsubsection[{set\_\-plot\_\-border}]{\setlength{\rightskip}{0pt plus 5cm}void Gtk::Plot::Area::set\_\-plot\_\-border ({\bf Gtk::Plot::Border} {\em border})}}
+\label{classGtk_1_1Plot_1_1Area_a1eac5a10b44cc7cff1c7c238659d6fef}
+
+
+Sets the border of the plot itself (not of the area). \hypertarget{classGtk_1_1Plot_1_1Area_a2f056d2340f08b59ba04c4c890d98f0b}{
+\index{Gtk::Plot::Area@{Gtk::Plot::Area}!set\_\-plot\_\-origin@{set\_\-plot\_\-origin}}
+\index{set\_\-plot\_\-origin@{set\_\-plot\_\-origin}!Gtk::Plot::Area@{Gtk::Plot::Area}}
+\subsubsection[{set\_\-plot\_\-origin}]{\setlength{\rightskip}{0pt plus 5cm}void Gtk::Plot::Area::set\_\-plot\_\-origin ({\bf Origin} {\em origin})}}
+\label{classGtk_1_1Plot_1_1Area_a2f056d2340f08b59ba04c4c890d98f0b}
+\hypertarget{classGtk_1_1Plot_1_1Area_aada203f9074e4b7e98631eff6d9a711e}{
+\index{Gtk::Plot::Area@{Gtk::Plot::Area}!set\_\-plot\_\-title@{set\_\-plot\_\-title}}
+\index{set\_\-plot\_\-title@{set\_\-plot\_\-title}!Gtk::Plot::Area@{Gtk::Plot::Area}}
+\subsubsection[{set\_\-plot\_\-title}]{\setlength{\rightskip}{0pt plus 5cm}void Gtk::Plot::Area::set\_\-plot\_\-title (std::string {\em title})}}
+\label{classGtk_1_1Plot_1_1Area_aada203f9074e4b7e98631eff6d9a711e}
+\hypertarget{classGtk_1_1Plot_1_1Area_ab6fa6f90087da8c0cf42565c4ad55e10}{
+\index{Gtk::Plot::Area@{Gtk::Plot::Area}!set\_\-plot\_\-title@{set\_\-plot\_\-title}}
+\index{set\_\-plot\_\-title@{set\_\-plot\_\-title}!Gtk::Plot::Area@{Gtk::Plot::Area}}
+\subsubsection[{set\_\-plot\_\-title}]{\setlength{\rightskip}{0pt plus 5cm}void Gtk::Plot::Area::set\_\-plot\_\-title (Gtk::Label \& {\em title})}}
+\label{classGtk_1_1Plot_1_1Area_ab6fa6f90087da8c0cf42565c4ad55e10}
+\hypertarget{classGtk_1_1Plot_1_1Area_a59e21443681606bfefc610ef7913e717}{
+\index{Gtk::Plot::Area@{Gtk::Plot::Area}!set\_\-plot\_\-title\_\-position@{set\_\-plot\_\-title\_\-position}}
+\index{set\_\-plot\_\-title\_\-position@{set\_\-plot\_\-title\_\-position}!Gtk::Plot::Area@{Gtk::Plot::Area}}
+\subsubsection[{set\_\-plot\_\-title\_\-position}]{\setlength{\rightskip}{0pt plus 5cm}void Gtk::Plot::Area::set\_\-plot\_\-title\_\-position ({\bf Gtk::Plot::LabelPosition} {\em pos})}}
+\label{classGtk_1_1Plot_1_1Area_a59e21443681606bfefc610ef7913e717}
+\hypertarget{classGtk_1_1Plot_1_1Area_aba6e491e72d135eb80e8fa29cdc06165}{
+\index{Gtk::Plot::Area@{Gtk::Plot::Area}!show\_\-axes@{show\_\-axes}}
+\index{show\_\-axes@{show\_\-axes}!Gtk::Plot::Area@{Gtk::Plot::Area}}
+\subsubsection[{show\_\-axes}]{\setlength{\rightskip}{0pt plus 5cm}void Gtk::Plot::Area::show\_\-axes ()}}
+\label{classGtk_1_1Plot_1_1Area_aba6e491e72d135eb80e8fa29cdc06165}
+
+
+Shows the data axes. \hypertarget{classGtk_1_1Plot_1_1Area_a2be35b990f15d351739af58119d5e7a9}{
+\index{Gtk::Plot::Area@{Gtk::Plot::Area}!translate\_\-context@{translate\_\-context}}
+\index{translate\_\-context@{translate\_\-context}!Gtk::Plot::Area@{Gtk::Plot::Area}}
+\subsubsection[{translate\_\-context}]{\setlength{\rightskip}{0pt plus 5cm}void Gtk::Plot::Area::translate\_\-context (Cairo::Context $\ast$ {\em context})\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classGtk_1_1Plot_1_1Area_a2be35b990f15d351739af58119d5e7a9}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classGtk_1_1Plot_1_1Area_a46e921e38d4f06b75fa733ead0e3e153}{
+\index{Gtk::Plot::Area@{Gtk::Plot::Area}!m\_\-axes\_\-style@{m\_\-axes\_\-style}}
+\index{m\_\-axes\_\-style@{m\_\-axes\_\-style}!Gtk::Plot::Area@{Gtk::Plot::Area}}
+\subsubsection[{m\_\-axes\_\-style}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Line} {\bf Gtk::Plot::Area::m\_\-axes\_\-style}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classGtk_1_1Plot_1_1Area_a46e921e38d4f06b75fa733ead0e3e153}
+\hypertarget{classGtk_1_1Plot_1_1Area_a64ed564fa355d20fa2e85c39bf681505}{
+\index{Gtk::Plot::Area@{Gtk::Plot::Area}!m\_\-border@{m\_\-border}}
+\index{m\_\-border@{m\_\-border}!Gtk::Plot::Area@{Gtk::Plot::Area}}
+\subsubsection[{m\_\-border}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Border} {\bf Gtk::Plot::Area::m\_\-border}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classGtk_1_1Plot_1_1Area_a64ed564fa355d20fa2e85c39bf681505}
+\hypertarget{classGtk_1_1Plot_1_1Area_acca72f1dfcaf243905f2f2a72383a0a6}{
+\index{Gtk::Plot::Area@{Gtk::Plot::Area}!m\_\-def\_\-vector@{m\_\-def\_\-vector}}
+\index{m\_\-def\_\-vector@{m\_\-def\_\-vector}!Gtk::Plot::Area@{Gtk::Plot::Area}}
+\subsubsection[{m\_\-def\_\-vector}]{\setlength{\rightskip}{0pt plus 5cm}{\bf DefaultVector} {\bf Gtk::Plot::Area::m\_\-def\_\-vector}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classGtk_1_1Plot_1_1Area_acca72f1dfcaf243905f2f2a72383a0a6}
+\hypertarget{classGtk_1_1Plot_1_1Area_a1f3ef841a840e36e86451344a6b2ab12}{
+\index{Gtk::Plot::Area@{Gtk::Plot::Area}!m\_\-label\_\-position@{m\_\-label\_\-position}}
+\index{m\_\-label\_\-position@{m\_\-label\_\-position}!Gtk::Plot::Area@{Gtk::Plot::Area}}
+\subsubsection[{m\_\-label\_\-position}]{\setlength{\rightskip}{0pt plus 5cm}{\bf LabelPosition} {\bf Gtk::Plot::Area::m\_\-label\_\-position}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classGtk_1_1Plot_1_1Area_a1f3ef841a840e36e86451344a6b2ab12}
+\hypertarget{classGtk_1_1Plot_1_1Area_aec9a3973b17514a371d75780dd525499}{
+\index{Gtk::Plot::Area@{Gtk::Plot::Area}!m\_\-lines@{m\_\-lines}}
+\index{m\_\-lines@{m\_\-lines}!Gtk::Plot::Area@{Gtk::Plot::Area}}
+\subsubsection[{m\_\-lines}]{\setlength{\rightskip}{0pt plus 5cm}std::deque$<${\bf Line2D}$\ast$$>$ {\bf Gtk::Plot::Area::m\_\-lines}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classGtk_1_1Plot_1_1Area_aec9a3973b17514a371d75780dd525499}
+\hypertarget{classGtk_1_1Plot_1_1Area_ae7f8e7f943559993a00a50f612158d8a}{
+\index{Gtk::Plot::Area@{Gtk::Plot::Area}!m\_\-min\_\-size@{m\_\-min\_\-size}}
+\index{m\_\-min\_\-size@{m\_\-min\_\-size}!Gtk::Plot::Area@{Gtk::Plot::Area}}
+\subsubsection[{m\_\-min\_\-size}]{\setlength{\rightskip}{0pt plus 5cm}Gtk::Allocation {\bf Gtk::Plot::Area::m\_\-min\_\-size}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classGtk_1_1Plot_1_1Area_ae7f8e7f943559993a00a50f612158d8a}
+\hypertarget{classGtk_1_1Plot_1_1Area_acd35e208c895c011d2cd8803bab9fb05}{
+\index{Gtk::Plot::Area@{Gtk::Plot::Area}!m\_\-origin@{m\_\-origin}}
+\index{m\_\-origin@{m\_\-origin}!Gtk::Plot::Area@{Gtk::Plot::Area}}
+\subsubsection[{m\_\-origin}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Origin} {\bf Gtk::Plot::Area::m\_\-origin}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classGtk_1_1Plot_1_1Area_acd35e208c895c011d2cd8803bab9fb05}
+\hypertarget{classGtk_1_1Plot_1_1Area_a2f9c13393566c0dafb7ef3f95241fa87}{
+\index{Gtk::Plot::Area@{Gtk::Plot::Area}!m\_\-padding\_\-x@{m\_\-padding\_\-x}}
+\index{m\_\-padding\_\-x@{m\_\-padding\_\-x}!Gtk::Plot::Area@{Gtk::Plot::Area}}
+\subsubsection[{m\_\-padding\_\-x}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf Gtk::Plot::Area::m\_\-padding\_\-x}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classGtk_1_1Plot_1_1Area_a2f9c13393566c0dafb7ef3f95241fa87}
+\hypertarget{classGtk_1_1Plot_1_1Area_a54d14872d49c140d832b0fb75ad8f55d}{
+\index{Gtk::Plot::Area@{Gtk::Plot::Area}!m\_\-padding\_\-y@{m\_\-padding\_\-y}}
+\index{m\_\-padding\_\-y@{m\_\-padding\_\-y}!Gtk::Plot::Area@{Gtk::Plot::Area}}
+\subsubsection[{m\_\-padding\_\-y}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf Gtk::Plot::Area::m\_\-padding\_\-y}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classGtk_1_1Plot_1_1Area_a54d14872d49c140d832b0fb75ad8f55d}
+\hypertarget{classGtk_1_1Plot_1_1Area_aed0c26f548c6de73e8d91a1b359ac30d}{
+\index{Gtk::Plot::Area@{Gtk::Plot::Area}!m\_\-range\_\-rect@{m\_\-range\_\-rect}}
+\index{m\_\-range\_\-rect@{m\_\-range\_\-rect}!Gtk::Plot::Area@{Gtk::Plot::Area}}
+\subsubsection[{m\_\-range\_\-rect}]{\setlength{\rightskip}{0pt plus 5cm}Gdk::Rectangle {\bf Gtk::Plot::Area::m\_\-range\_\-rect}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classGtk_1_1Plot_1_1Area_aed0c26f548c6de73e8d91a1b359ac30d}
+\hypertarget{classGtk_1_1Plot_1_1Area_ad3f7f9608995f133a30760540a0ed745}{
+\index{Gtk::Plot::Area@{Gtk::Plot::Area}!m\_\-refGdkWindow@{m\_\-refGdkWindow}}
+\index{m\_\-refGdkWindow@{m\_\-refGdkWindow}!Gtk::Plot::Area@{Gtk::Plot::Area}}
+\subsubsection[{m\_\-refGdkWindow}]{\setlength{\rightskip}{0pt plus 5cm}Glib::RefPtr$<$Gdk::Window$>$ {\bf Gtk::Plot::Area::m\_\-refGdkWindow}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classGtk_1_1Plot_1_1Area_ad3f7f9608995f133a30760540a0ed745}
+\hypertarget{classGtk_1_1Plot_1_1Area_ae7bc177b3fd37a14aed42cbbc8051386}{
+\index{Gtk::Plot::Area@{Gtk::Plot::Area}!m\_\-show\_\-axes@{m\_\-show\_\-axes}}
+\index{m\_\-show\_\-axes@{m\_\-show\_\-axes}!Gtk::Plot::Area@{Gtk::Plot::Area}}
+\subsubsection[{m\_\-show\_\-axes}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf Gtk::Plot::Area::m\_\-show\_\-axes}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classGtk_1_1Plot_1_1Area_ae7bc177b3fd37a14aed42cbbc8051386}
+\hypertarget{classGtk_1_1Plot_1_1Area_ab3723bf8b688502a83052ae90f4d931a}{
+\index{Gtk::Plot::Area@{Gtk::Plot::Area}!m\_\-title@{m\_\-title}}
+\index{m\_\-title@{m\_\-title}!Gtk::Plot::Area@{Gtk::Plot::Area}}
+\subsubsection[{m\_\-title}]{\setlength{\rightskip}{0pt plus 5cm}Gtk::Label$\ast$ {\bf Gtk::Plot::Area::m\_\-title}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classGtk_1_1Plot_1_1Area_ab3723bf8b688502a83052ae90f4d931a}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{PlotArea_8h}{PlotArea.h}\item 
+\hyperlink{PlotArea_8cpp}{PlotArea.cpp}\end{DoxyCompactItemize}

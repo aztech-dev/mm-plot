@@ -42,10 +42,10 @@ int main(int argc, char** argv) {
 
 	   plot2.show_axes();
 	   plot2.set_padding(10,10);
-	   plot2.set_plot_origin(BOTTOM_LEFT);
+	   //plot2.set_plot_origin(BOTTOM_LEFT);
 	   //plot2.set_default_vector(VECTOR_BOTTOM_LEFT);
-	   plot2.set_plot_title_position(POSITION_INNER);
-	   plot2.set_plot_title("Plot area, title inside,\nbottom-left origin, top-right vector");
+	   //plot2.set_plot_title_position(POSITION_INNER);
+	   plot2.set_plot_title("Plot area, title outside,\ncenter origin, top-right vector");
 
 	   for (double i = 0; i < 150; i++)
 	   {
@@ -54,6 +54,13 @@ int main(int argc, char** argv) {
 		   plot.get_lines()[0]->add_data_item(p);
 		   plot2.get_lines()[0]->add_data_item(p2);
 	   }
+
+	   plot.get_lines()[0]->set_color(Gdk::Color("red"));
+	   plot.get_lines()[0]->set_width(1);
+	   plot2.get_lines()[0]->set_color(Gdk::Color("grey"));
+	   plot2.get_lines()[0]->set_width(1);
+	   std::valarray<double> d = { 5 };
+	   plot.get_lines()[0]->set_dash(d);
 
 	   frame.pack_start(plot);
 	   frame.pack_end(plot2);
